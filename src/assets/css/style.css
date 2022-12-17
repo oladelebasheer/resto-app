@@ -1,0 +1,32 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  
+}
+/* Logo */
+.logo{
+  width: 100px;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:#BDC3C7;
+}
+.row{
+  background-color: #fff;
+  border-radius: 30px;
+}
+img{
+  border-top-left-radius: 30px;
+  
+}
+span{
+  width: 40px;
+  height: 40px;
+}
