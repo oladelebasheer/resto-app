@@ -32,7 +32,7 @@
             <a href="#">Forgot password</a>
         </div>
             <div class="mb-3">
-                <p>Don't have an account <a href="#">Sign Up here</a></p>
+                <p>Don't have an account!<a href="#">Sign Up here</a></p>
             </div>
           </form>
         </div>
