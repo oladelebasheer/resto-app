@@ -9,31 +9,18 @@
                 <h1 class="fw-bold text-capitalize py-3">Sign Up</h1>
         <form>
             <div class="mb-4 input-group">
-                <span class="input-group-text">
-                    <font-awesome-icon icon="fa-solid fa-user" />
-                </span>
-              <input icon="fa-solid fa-user-secret" type="email" class="form-control my-3" placeholder="Enter name">
+              <input icon="fa-solid fa-user-secret" 
+              type="email" class="form-control my-3" 
+              placeholder="Enter name" v-model="name">
             </div>
             <div class="mb-3">
-                <span class="input-group-text">
-                    <font-awesome-icon icon="fa-solid fa-user-secret" />
-                </span>
-                <input type="email" class="form-control" placeholder="Email address">
+                <input type="email" class="form-control" placeholder="Email address" v-model="email">
               </div>
             <div class="mb-3">
-                <span class="input-group-text">
-                    <font-awesome-icon icon="fa-solid fa-user-secret" />
-                </span>
-              <input type="password" class="form-control" placeholder="Enter password">
+              <input type="password" class="form-control" placeholder="Enter password" v-model="password">
             </div>
             <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-primary lg">Sign Up</button></div>
-            <div class="mb-4 mt-3">
-            <a href="#">Forgot password</a>
-        </div>
-            <div class="mb-3">
-                <p>Don't have an account!<a href="#">Sign Up here</a></p>
-            </div>
+            <button type="submit" class="btn btn-primary lg" v-on:click="signUp()">Sign Up</button></div>
           </form>
         </div>
         </div>
@@ -43,6 +30,18 @@
 
 <script>
 export default{
-    name:'SignUp'
+    name:'SignUp',
+    data(){
+        return{
+            name:'',
+            email:'',
+            password:''
+        }
+    },
+    methods:{
+        signUp(){
+            console.warn("Signed up", this.name, this.email, this.password)
+        }
+    }
 }
 </script>
